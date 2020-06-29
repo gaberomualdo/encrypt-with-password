@@ -24,6 +24,8 @@
   "homepage": "https://github.com/xtrp/encrypt-with-password#readme",
   "dependencies": {
     "aes-js": "^3.1.2",
+    "atob": "^2.1.2",
+    "btoa": "^1.2.1",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "pbkdf2": "^3.1.1"

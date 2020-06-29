@@ -1,3 +1,15 @@
+// get dependencies
+
+// atob and btoa for conversion between Base64 and ASCII text
+const atob = require('atob');
+const btoa = require('btoa');
+
+// AES-JS for encryption
+const aesjs = require('aes-js');
+
+// PBDKF2 for key derivation
+const pbkdf2 = require('pbkdf2');
+
 // encrypt text with AES-256 (CBC) using key derived from password argument
 const encryptText = (password, text) => {
   // convert text to base64
@@ -64,7 +76,7 @@ const decryptText = (password, cipherText) => {
   // convert decrypted bytes into decrypted text in base64
   let decryptedTextInBase64 = aesjs.utils.utf8.fromBytes(decryptedBytes);
 
-  // remove padding from base64 decrypted text and store in variable
+  // remove padding from base64 decrypted Base64 text and store in variable
   decryptedTextInBase64 = decryptedTextInBase64.replace(/=/g, '');
 
   // convert decryptedTextInBase64 to text
