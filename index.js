@@ -1,5 +1,3 @@
-// create encrypt and decrypt functions using modules for ease of use
-
 // encrypt text with AES-256 (CBC) using key derived from password argument
 const encryptText = (password, text) => {
   // convert text to base64
