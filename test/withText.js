@@ -49,6 +49,7 @@ const TEXT_SAMPLES = [
   You still shall live--such virtue hath my pen--
   Where breath most breathes, even in the mouths of men.`,
 ];
+const PASSWORDS = ['helloworld', `2@:f'dLV<y@s-hXg`, `>P4'kV"AK<4U9w7H`, 'testpassword', `#uc^_wdaukr?hdvh`];
 
 const getTextSampleDesc = (sampleIdx) => {
   const WORD_LIMIT = 5;
@@ -65,8 +66,6 @@ const getTextSampleDesc = (sampleIdx) => {
 };
 
 describe('Encrypting and decrypting text', () => {
-  const PASSWORDS = ['helloworld', `2@:f'dLV<y@s-hXg`, `>P4'kV"AK<4U9w7H`, 'testpassword', `#uc^_wdaukr?hdvh`];
-
   TEXT_SAMPLES.forEach((sample, sampleIdx) => {
     describe(getTextSampleDesc(sampleIdx), () => {
       PASSWORDS.forEach((password, passwordIdx) => {

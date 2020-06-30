@@ -90,10 +90,10 @@ const decryptText = (cipherText, password) => {
 };
 
 // encrypt JSON
-const encryptJSON = (obj, password) => encryptText(password, JSON.stringify(obj));
+const encryptJSON = (obj, password) => encryptText(JSON.stringify(obj), password);
 
 // decrypt JSON
-const decryptJSON = (cipherText, password) => JSON.parse(decryptText(password, cipherText));
+const decryptJSON = (cipherText, password) => JSON.parse(decryptText(cipherText, password));
 
 // export all necessary functions
 module.exports = {
