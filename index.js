@@ -1,6 +1,6 @@
 // dependencies
 
-// atob and btoa for conversion between Base64 and ASCII text
+// atob and btoa for conversion between Base64 and text
 const atob = require('atob');
 const btoa = require('btoa');
 
@@ -10,10 +10,13 @@ const aesjs = require('aes-js');
 // PBDKF2 for key derivation
 const pbkdf2 = require('pbkdf2');
 
+// crypto for generating random cipher IV
+const crypto = require('crypto');
+
 // encrypt text with AES-256 (CBC) using key derived from password argument
 const encryptText = (text, password) => {
   // convert text to base64
-  const textInBase64 = btoa(text);
+  const textInBase64 = btoa(unescape(encodeURIComponent(text)));
 
   // add padding to text in base64 so that it is a multiple of 16 bytes long
   let textWithPadding = textInBase64;
@@ -80,7 +83,7 @@ const decryptText = (cipherText, password) => {
   decryptedTextInBase64 = decryptedTextInBase64.replace(/=/g, '');
 
   // convert decryptedTextInBase64 to text
-  const decryptedText = atob(decryptedTextInBase64);
+  const decryptedText = decodeURIComponent(escape(atob(decryptedTextInBase64)));
 
   // return decrypted text
   return decryptedText;

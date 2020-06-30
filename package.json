@@ -4,7 +4,8 @@
   "description": "Securely encrypt text with a password in JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/"
+    "test": "mocha test/",
+    "test-with-coverage": "nyc mocha test/"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "aes-js": "^3.1.2",
     "atob": "^2.1.2",
     "btoa": "^1.2.1",
+    "chai": "^4.2.0",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "pbkdf2": "^3.1.1"
