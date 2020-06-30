@@ -1,4 +1,4 @@
-<h1 align="center"><img src='img/icon.png' width='75' height='75'> encrypt-with-password</h1>
+<h1 align="center"><img src='img/icon.png' width='25' height='25'> encrypt-with-password</h1>
 <p align="center">
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xtrp/encrypt-with-password"></a>
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xtrp/encrypt-with-password?style=social"></a>
