@@ -1,4 +1,4 @@
-<h1 align="center"><img src='img/icon.png'> encrypt-with-password</h1>
+<h1 align="center"><img src='img/icon.png' width='75' height='75'> encrypt-with-password</h1>
 <p align="center">
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xtrp/encrypt-with-password"></a>
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xtrp/encrypt-with-password?style=social"></a>
@@ -27,9 +27,9 @@ yarn add encrypt-with-password
 
 ## Encrypting and Decrypting Text with a Password
 
-Use `encryptpwd.encrypt(text, password)` for encrypting text with a password.
+`encryptpwd.encrypt(text, password)` for encrypting text with a password.
 
-Use `encryptpwd.decrypt(encryptedValue, password)` for decrypting text with the password used when encrypting.
+`encryptpwd.decrypt(encryptedValue, password)` for decrypting text with the password used when encrypting.
 
 Example:
 
@@ -39,7 +39,7 @@ const encryptpwd = require('encrypt-with-password');
 const text = 'Hello, World!';
 const password = 'examplepassword';
 
-const encrypted = encryptpwd.encrypt(text, password); // ---> this is the encrypted cipher (output) hex value
+const encrypted = encryptpwd.encrypt(text, password); // ---> this is the encrypted (output) value
 
 // example encrypted value: 'e68e7ccd9e908665818a49f111c342ed:c9b83ff7624bb3b26af8cc853d61cd2f7959cecc4308383c39a0924e90637889'
 
@@ -50,16 +50,16 @@ NOTE: the encrypted output value of given text and password will likely change w
 
 ## Encrypting and Decrypting JavaScript Objects (JSON) with a Password
 
-Use `encryptpwd.encryptJSON(javascriptObj, password)` for encrypting JavaScript objects and variables with a password. Objects passed into this function are stored in JSON. This means that some richer objects like Date and custom classes may not be supported as seemlessly as normal numbers and strings.
+`encryptpwd.encryptJSON(jsObject, password)` for encrypting JavaScript objects and variables with a password.
 
-Use `encryptpwd.decryptJSON(encryptedValue, password)` for decrypting JavaScript objects with the password used when encrypting.
+`encryptpwd.decryptJSON(encryptedValue, password)` for decrypting JavaScript objects with the password used when encrypting.
 
 Example:
 
 ```javascript
 const encryptpwd = require('encrypt-with-password');
 
-const javascriptObject = {
+const jsObject = {
   aString: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
   aNumber: 5,
   anArray: [1, 2, 3, 4, 5],
@@ -69,12 +69,14 @@ const javascriptObject = {
 };
 const password = 'examplepassword2';
 
-const encrypted = encryptpwd.encryptJSON(javascriptObject, password); // ---> this is the encrypted cipher (output) hex value
+const encrypted = encryptpwd.encryptJSON(jsObject, password); // ---> this is the encrypted value
 
 // example encrypted value: 'f953284ffe3e44a7b9de8487b50c3449:123378b5c481399488f520ebb774b076b85a12bc0f9a67cf8faf359eb4f804fc0594bc42374a20b4216b1312d7a408cf94517e19dfcada5513c49f6d13d26c982c562904306900a3f777b9c19b9c002e12dd216984f68566684f9f0259a45e007a0cecb2325333faafb18ed0e751933d8b1195b02b2adda29269cf1c6fa6fff73f0bac4abcf58b391521e0382c06a5f01f31c1243d827f8c7076f81d7f530259a3ae459e524bee80230672f153ab6a4e'
 
-const decrypted = encryptpwd.decryptJSON(encrypted, password) // ---> this decrypts the encrypted value and yields the original text
+const decrypted = encryptpwd.decryptJSON(encrypted, password) // ---> this decrypts the encrypted value and yields the original object
 ```
+
+NOTE: encrypted objects are stored in JSON. This means that some richer objects like Date and custom classes may not be supported as seemlessly as normal numbers and strings.
 
 ## Tests
 
