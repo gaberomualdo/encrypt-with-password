@@ -1,4 +1,4 @@
-// get dependencies
+// dependencies
 
 // atob and btoa for conversion between Base64 and ASCII text
 const atob = require('atob');
@@ -11,7 +11,7 @@ const aesjs = require('aes-js');
 const pbkdf2 = require('pbkdf2');
 
 // encrypt text with AES-256 (CBC) using key derived from password argument
-const encryptText = (password, text) => {
+const encryptText = (text, password) => {
   // convert text to base64
   const textInBase64 = btoa(text);
 
@@ -52,7 +52,7 @@ const encryptText = (password, text) => {
 };
 
 // decrypt cipher text with AES-256 (CBC) using key derived from password argument
-const decryptText = (password, cipherText) => {
+const decryptText = (cipherText, password) => {
   // variable for key generated from password using KDF
   const derivedKey = pbkdf2.pbkdf2Sync(password, 'salt', 1, 256 / 8, 'sha512');
 
@@ -87,10 +87,10 @@ const decryptText = (password, cipherText) => {
 };
 
 // encrypt JSON
-const encryptJSON = (password, obj) => encryptText(password, JSON.stringify(obj));
+const encryptJSON = (obj, password) => encryptText(password, JSON.stringify(obj));
 
 // decrypt JSON
-const decryptJSON = (password, cipherText) => JSON.parse(decryptText(password, cipherText));
+const decryptJSON = (cipherText, password) => JSON.parse(decryptText(password, cipherText));
 
 // export all necessary functions
 module.exports = {
