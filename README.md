@@ -7,7 +7,7 @@
     <img alt="Build Status" src="https://travis-ci.com/xtrp/encrypt-with-password.svg">
 </p>
 
-> Securely encrypt text with a password in JavaScript.
+<blockquote align="center">Securely encrypt text with a password in JavaScript.</blockquote>
 
 encrypt-with-password simplifies encrypting text and data securely with leading security standards. It uses [PBKDF2](https://www.npmjs.com/package/pbkdf2) for key derivation and [AES](https://www.npmjs.com/package/aes-js) 256-bit for encryption and decryption.
 
