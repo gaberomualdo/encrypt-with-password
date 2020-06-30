@@ -24,7 +24,6 @@ const OBJ_SAMPLES = [
     four: [4],
   },
   {
-    aDate: new Date(),
     anObj: {
       aKey: 'a value',
       anotherKey: 'another value',
@@ -52,7 +51,7 @@ So long lives this, and this gives life to thee.`,
 const PASSWORDS = ['helloworld', `2@:f'dLV<y@s-hXg`, `>P4'kV"AK<4U9w7H`, 'testpassword', `#uc^_wdaukr?hdvh`];
 
 const getObjSampleDesc = (sampleIdx) => {
-  const CHAR_LIMIT = 15;
+  const CHAR_LIMIT = 25;
 
   const objSample = OBJ_SAMPLES[sampleIdx];
 
@@ -62,7 +61,7 @@ const getObjSampleDesc = (sampleIdx) => {
     objSamplePreview = objSamplePreview.substring(0, CHAR_LIMIT) + '...';
   }
 
-  return `With object sample ${sampleIdx + 1} ('${objSamplePreview}')`;
+  return `With object sample #${sampleIdx + 1} ('${objSamplePreview}')`;
 };
 
 describe('Encrypting and decrypting JSON', () => {

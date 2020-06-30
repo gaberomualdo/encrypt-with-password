@@ -62,7 +62,7 @@ const getTextSampleDesc = (sampleIdx) => {
     textSamplePreview = textSamplePreview.split(' ').slice(0, WORD_LIMIT).join(' ') + '...';
   }
 
-  return `With text sample ${sampleIdx + 1} ('${textSamplePreview}')`;
+  return `With text sample #${sampleIdx + 1} ('${textSamplePreview}')`;
 };
 
 describe('Encrypting and decrypting text', () => {
