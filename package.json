@@ -1,6 +1,6 @@
 {
   "name": "encrypt-with-password",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Securely encrypt text with a password in JavaScript.",
   "main": "index.js",
   "scripts": {
