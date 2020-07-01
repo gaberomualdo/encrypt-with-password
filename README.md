@@ -5,7 +5,7 @@
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xtrp/encrypt-with-password?style=social"></a>
     <a href="https://github.com/xtrp"><img alt="GitHub followers" src="https://img.shields.io/github/followers/xtrp?label=Follow%20Fred%20Adams&style=social"></a>
     <a href="https://www.npmjs.com/package/encrypt-with-password/"><img alt="NPM Downloads" src="https://img.shields.io/npm/dw/encrypt-with-password"></a>
-    <img alt="Build Status" src="https://travis-ci.com/xtrp/encrypt-with-password.svg">
+    <img alt="Build Status" src="https://travis-ci.com/xtrp/encrypt-with-password.svg?token=QZcgzzn9v2iTArb6wSyC&branch=master">
 </p>
 
 encrypt-with-password simplifies encrypting text and data securely with leading security standards. It uses [PBKDF2](https://www.npmjs.com/package/pbkdf2) for key derivation and [AES](https://www.npmjs.com/package/aes-js) 256-bit for encryption and decryption.
