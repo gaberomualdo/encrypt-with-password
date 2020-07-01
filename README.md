@@ -1,4 +1,5 @@
 <h1 align="center">🔐 encrypt-with-password</h1>
+<blockquote align="center">Securely encrypt text with a password in JavaScript.</blockquote>
 <p align="center">
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xtrp/encrypt-with-password"></a>
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xtrp/encrypt-with-password?style=social"></a>
@@ -6,8 +7,6 @@
     <a href="https://www.npmjs.com/package/encrypt-with-password/"><img alt="NPM Downloads" src="https://img.shields.io/npm/dw/encrypt-with-password"></a>
     <img alt="Build Status" src="https://travis-ci.com/xtrp/encrypt-with-password.svg">
 </p>
-
-<blockquote align="center">Securely encrypt text with a password in JavaScript.</blockquote>
 
 encrypt-with-password simplifies encrypting text and data securely with leading security standards. It uses [PBKDF2](https://www.npmjs.com/package/pbkdf2) for key derivation and [AES](https://www.npmjs.com/package/aes-js) 256-bit for encryption and decryption.
 
