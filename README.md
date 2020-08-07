@@ -96,6 +96,6 @@ Run ```npm run test``` to run tests. To see test coverage along with running tes
 
 ## License and Credits
 
-encrypt-with-password was built solely by web developer and student [Fred Adams](https://xtrp.io/).
+encrypt-with-password was built solely by web developer and student [Gabriel Romualdo](https://xtrp.io/).
 
 The code is completely OSS and is MIT Licensed. See LICENSE.txt for details.

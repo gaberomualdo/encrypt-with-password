@@ -17,7 +17,7 @@
     "password",
     "pbdkf2"
   ],
-  "author": "Fred Adams <xtrp@xtrp.io>",
+  "author": "Gabriel Romualdo <xtrp@xtrp.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xtrp/encrypt-with-password/issues"
