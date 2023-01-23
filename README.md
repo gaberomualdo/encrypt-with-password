@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xtrp/encrypt-with-password"></a>
     <a href="https://github.com/xtrp/encrypt-with-password/"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xtrp/encrypt-with-password?style=social"></a>
-    <a href="https://github.com/xtrp"><img alt="GitHub followers" src="https://img.shields.io/github/followers/xtrp?label=Follow%20Fred%20Adams&style=social"></a>
+    <a href="https://github.com/xtrp"><img alt="GitHub followers" src="https://img.shields.io/github/followers/xtrp?label=Follow%20Gabriel%20Romualdo&style=social"></a>
     <a href="https://www.npmjs.com/package/encrypt-with-password/"><img alt="NPM Downloads" src="https://img.shields.io/npm/dw/encrypt-with-password"></a>
     <img alt="Build Status" src="https://travis-ci.com/xtrp/encrypt-with-password.svg?token=QZcgzzn9v2iTArb6wSyC&branch=master">
 </p>
